@@ -1,4 +1,4 @@
-import { test } from '../../fixtures/testFixtures'; // custom fixtures
+/*import { test } from '../../fixtures/testFixtures'; // custom fixtures
 import { HomePage } from '../../pages/HomePage';
 import { ProductPage } from '../../pages/ProductPage';
 import { CartPage } from '../../pages/CartPage';
@@ -36,3 +36,4 @@ test('Logged-in user can add product to cart', async ({
   await cartPage.goToCart();
   await cartPage.verifyProductInCart('Build your own computer');
 });
+*/

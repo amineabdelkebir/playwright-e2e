@@ -7,7 +7,7 @@ export class HomePage {
   readonly searchButton: Locator;
 
   constructor(private page: Page) {
-    this.registerLink = page.getByRole('link', { name: 'Register' });
+    this.registerLink = page.locator('a.ico-register');
     this.loginLink = page.getByRole('link', { name: 'Log in' });
     this.searchInput = page.getByPlaceholder('Search store');
     this.searchButton = page.getByRole('button', { name: 'Search' });
@@ -15,12 +15,14 @@ export class HomePage {
 
   async goto() {
     await this.page.goto('/');
+    console.log(this.registerLink);
   }
-/*
+
+
   async goToRegister() {
     await this.registerLink.click();
   }
-*/
+
   async searchProduct(productName: string) {
     await this.searchInput.fill(productName);
     await this.searchButton.click();

@@ -17,4 +17,5 @@ test('User can sign up successfully', async ({ page }) => {
   await homePage.goToRegister();
   await signupPage.register(user);
   await signupPage.verifyRegistrationSuccess();
+  
 });
